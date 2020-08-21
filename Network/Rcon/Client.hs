@@ -64,7 +64,7 @@ connect host port password =
      sock  <- So.socket (So.addrFamily addr)
                         (So.addrSocketType addr)
                         (So.addrProtocol addr)
-     So.connect sock (So.addrAddress addr) `Exc.onException` So.sClose sock
+     So.connect sock (So.addrAddress addr) `Exc.onException` So.close sock
 
      handle <- So.socketToHandle sock ReadWriteMode
 
