@@ -25,7 +25,7 @@ library
                        network,
                        stm,
                        time
-  ghc-options:         -Werror -Wall
+  ghc-options:         -Wall
   cc-options:          -Werror -Wall -Wextra
 
 executable rcon-client
@@ -38,7 +38,7 @@ executable rcon-client
                        stm,
                        time,
                        unix
-  ghc-options:         -Werror -Wall
+  ghc-options:         -Wall
   cc-options:          -Werror -Wall -Wextra
 
 test-suite test-rcon
@@ -54,7 +54,7 @@ test-suite test-rcon
                        test-framework,
                        test-framework-quickcheck2,
                        time
-  ghc-options:         -Werror -Wall
+  ghc-options:         -Wall
   cc-options:          -Werror -Wall -Wextra
 
 source-repository head
